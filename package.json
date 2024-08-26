@@ -1,0 +1,23 @@
+{
+    "name": "vorple-transcript-recorder-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "type": "module",
+    "scripts": {
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "vite": "5.4.2"
+    },
+    "files": [
+        "dist"
+    ],
+    "module": "./dist/transcript-recorder.min.js",
+    "require": "./dist/transcript-recorder.min.umd.cjs",
+    "exports": {
+        ".": {
+            "import": "./dist/transcript-recorder.min.js",
+            "require": "./dist/transcript-recorder.min.umd.cjs"
+        }
+    }
+}
